@@ -1,9 +1,25 @@
-/* Marquee Scrolling Animation */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .marquee {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
+  margin: 20px 0;
 }
 
 .marquee h1 {
@@ -17,14 +33,8 @@
   100% { transform: translateX(-100%); }
 }
 
-/* Basic styling for the titles */
-h1 a {
-  text-decoration: none;
-  color: black;
-  font-family: Arial, sans-serif;
-  font-size: 2rem;
-}
-
 hr {
-  border: 1px solid black;
+  border: none;
+  border-top: 2px solid #000;
+  margin: 10px 0;
 }
