@@ -20,17 +20,21 @@
             padding: 30px;
         }
 
-        /* Header styling */
+        /* Header styling for name and whereabouts */
         header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 30px;
         }
 
         header h1 {
-            font-size: 2.8rem;
-            font-weight: 400;
+            font-size: 1.6rem;
+            font-weight: 300;
             letter-spacing: -0.05em;
             line-height: 1;
+            margin: 0;
+            text-align: left;
         }
 
         header a {
@@ -38,6 +42,8 @@
             font-weight: 300;
             text-decoration: none;
             color: #000;
+            text-align: right;
+            margin: 0;
         }
 
         header a:hover {
@@ -48,8 +54,8 @@
         h1 {
             font-family: 'Monument Grotesk', sans-serif;
             font-size: 2.5rem;
-            font-weight: 600;
-            margin: 40px 0;
+            font-weight: 500;
+            margin: 20px 0;
             text-align: center;
             line-height: 1.2;
             letter-spacing: -0.05em;
@@ -69,13 +75,13 @@
             display: block;
             white-space: nowrap;
             overflow: hidden;
-            padding: 15px 0;
-            margin: 20px 0;
+            padding: 10px 0;
+            margin: 15px 0;
         }
 
         .marquee h1 {
             display: inline-block;
-            animation: marquee 25s linear infinite;
+            animation: marquee 20s linear infinite;
         }
 
         @keyframes marquee {
@@ -90,62 +96,4 @@
         /* Section dividers */
         hr {
             border: none;
-            border-top: 2px solid #ccc;
-            margin: 20px 0;
-        }
-
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>KARLA CALHEIROS // CW</h1>
-        <a href="Whereabouts" rel="history">WHEREABOUTS</a>
-    </header>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="VICTORIA-S-SECRET" rel="history">VICTORIA’S SECRET ♡</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="Reporter-Magazine" rel="history">REPORTER MAGAZINE ←</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="SKODA-We-Love-Cycling" rel="history">WE LOVE CYCLING ♡</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="Bratislava-Zoo" rel="history">BRATISLAVA ZOO</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="AXA" rel="history">◇ AXA ◇</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="The-ALL-NEW-SKODA-KAROQ" rel="history">ŠKODA KAROQ ◁</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="Beneva" rel="history">BENEVA</a></h1>
-    </div>
-
-    <hr>
-
-    <div class="marquee">
-        <h1><a href="SKODA-TOUR-DE-FRANCE
+            border-top:
