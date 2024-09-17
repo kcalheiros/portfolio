@@ -3,13 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    
-    <!-- Google Fonts for Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Karla Calheiros Portfolio</title>
+
+    <!-- Google Font or Adobe Font -->
+    <link href="https://use.typekit.net/your-font-id.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Monument Grotesk', sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 30px;
+        }
+
+        /* Project title styling */
+        h1 {
+            font-size: 3rem;
+            margin: 40px 0;
+            text-align: center;
+            line-height: 1.2;
+            letter-spacing: -0.05em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 300;
+        }
+
+        a:hover {
+            color: #ff6347;
+        }
+
+        /* Marquee animation */
+        .marquee {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 15px 0;
+            margin: 20px 0;
+        }
+
+        .marquee h1 {
+            display: inline-block;
+            animation: marquee 25s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Section dividers */
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #000;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,49 +100,49 @@
 
     <hr>
 
-    <div class="marquee" speed="-19">
+    <div class="marquee">
         <h1><a href="VICTORIA-S-SECRET" rel="history">VICTORIA’S SECRET ♡</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="20">
+    <div class="marquee">
         <h1><a href="Reporter-Magazine" rel="history">REPORTER MAGAZINE ←</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="-10">
+    <div class="marquee">
         <h1><a href="SKODA-We-Love-Cycling" rel="history">WE LOVE CYCLING ♡</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="11">
+    <div class="marquee">
         <h1><a href="Bratislava-Zoo" rel="history">BRATISLAVA ZOO</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="36" behavior="bounce">
+    <div class="marquee">
         <h1><a href="AXA" rel="history">◇ AXA ◇</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="19">
+    <div class="marquee">
         <h1><a href="The-ALL-NEW-SKODA-KAROQ" rel="history">ŠKODA KAROQ ◁</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="-10" behavior="bounce">
+    <div class="marquee">
         <h1><a href="Beneva" rel="history">BENEVA</a></h1>
     </div>
 
     <hr>
 
-    <div class="marquee" speed="-37">
+    <div class="marquee">
         <h1><a href="SKODA-TOUR-DE-FRANCE-FEMME" rel="history">TOUR DE FRANCE FEMME ♡ ŠKODA ♡</a></h1>
     </div>
 
