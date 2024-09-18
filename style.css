@@ -57,22 +57,25 @@ hr {
 }
 
 /* Header styling */
-header {
-  text-align: center;
-  margin-bottom: 20px;
+/* Styling for Karla Calheiros */
+h1.name {
+  font-family: "Diatype", sans-serif;
+  font-weight: 300; /* Thin */
+  font-size: 2rem; /* Adjust this size as needed */
+  letter-spacing: 0.05em;
+  position: absolute;
+  left: 2%; /* Adjust alignment */
+  top: 10%; /* Vertical alignment */
 }
 
-header h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
+/* Styling for Whereabouts */
+h1.whereabouts {
+  font-family: "Diatype", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  position: absolute;
+  right: 2%; /* Align to the right */
+  top: 10%; /* Vertical alignment */
 }
 
-header a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #000;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
