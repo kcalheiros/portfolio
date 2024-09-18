@@ -1,81 +1,77 @@
-/* General body styles */
 body {
-  font-family: 'Diatype', sans-serif;
-  background-color: #fff;
-  color: #333;
-  margin: 0;
-  padding: 20px;
+    font-family: "Diatype Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
 }
 
-/* Project title styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "Diatype Medium", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.header .left {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header .right {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.marquee-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
 h1 {
-  font-family: 'Diatype', sans-serif;
-  font-size: 1.5rem;
-  margin: 15px 0;
-  text-align: center;
-  color: #000;
+    font-family: "Diatype Regular", sans-serif;
+    font-size: 14.4vmin;
+    font-weight: 400;
+    letter-spacing: .03em;
+    margin: 0;
+    line-height: 0.9;
 }
 
-a {
-  text-decoration: none;
-  color: #0056b3;
+hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 0;
 }
 
-a:hover {
-  color: #ff6347;
-}
-
-/* Marquee animation */
 .marquee {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 10px 0;
-  margin: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px 0;
+    animation: scroll 10s linear infinite;
 }
 
 .marquee h1 {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 15s linear infinite;
+    display: inline-block;
+    padding-left: 100%;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.marquee:nth-child(odd) h1 {
+    animation: scroll-reverse 10s linear infinite;
 }
 
-/* Section dividers */
-hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 10px 0;
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
-/* Header styling */
-/* Styling for Karla Calheiros */
-h1.name {
-  font-family: "Diatype", sans-serif;
-  font-weight: 300; /* Thin */
-  font-size: 2rem; /* Adjust this size as needed */
-  letter-spacing: 0.05em;
-  position: absolute;
-  left: 2%; /* Adjust alignment */
-  top: 10%; /* Vertical alignment */
+@keyframes scroll-reverse {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
-
-/* Styling for Whereabouts */
-h1.whereabouts {
-  font-family: "Diatype", sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
-  letter-spacing: 0.05em;
-  position: absolute;
-  right: 2%; /* Align to the right */
-  top: 10%; /* Vertical alignment */
-}
-
