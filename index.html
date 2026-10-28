@@ -45,6 +45,26 @@
 .footer .links a span{color:#999}
 .footer .links a:hover{gap:16px;opacity:.7}
 @media(max-width:700px){.footer .links{gap:8px 28px}.footer .links a{font-size:15px}}
+
+/* Layout pass: coherent editorial type scale and responsive headings */
+.hero.hero-intro .hero-copy,
+.about .prose{font-size:clamp(16px,1.18vw,18px);line-height:1.65}
+.meta p{font-size:clamp(18px,1.55vw,22px);line-height:1.46}
+.case h3{font-size:clamp(44px,7.2vw,108px);letter-spacing:-.045em;overflow-wrap:break-word}
+.work h2,.footer h2{font-size:clamp(78px,15vw,220px);letter-spacing:-.055em;line-height:.9;max-width:100%;overflow-wrap:normal}
+.footer h2{white-space:nowrap}
+.footer .links{position:relative;z-index:1}
+@media(max-width:700px){
+ .hero.hero-intro .hero-copy,.about .prose{font-size:16px;line-height:1.65}
+ .meta p{font-size:18px;line-height:1.46}
+ .case h3{font-size:clamp(38px,9vw,62px);letter-spacing:-.035em;line-height:1}
+ .work h2,.footer h2{font-size:clamp(58px,14.4vw,105px);letter-spacing:-.055em;line-height:.95;margin-top:48px}
+ .footer{min-height:unset;padding:85px 0 30px}
+ .footer .links{margin-top:44px;gap:12px 26px}
+ .footer .links a{overflow-wrap:anywhere}
+ .fine{margin-top:100px;gap:18px}
+}
+@media(max-width:380px){.footer h2{font-size:13.5vw}.top{font-size:10px}.top div{gap:9px}.fine{flex-wrap:wrap}}
 </style></head><body>
 <nav class="top"><a href="#top">KARLA CALHEIROS</a><div><a href="#sobre">SOBRE</a><a href="#work">WORK</a><a href="#contato">CONTATO</a></div></nav>
 <header class="hero hero-intro" id="top"><div class="greeting" aria-label="Hello. Ahoj. Hallo. Oi."><span class="greeting-word word-1" aria-hidden="true">Hello.</span><span class="greeting-word word-2" aria-hidden="true">Ahoj.</span><span class="greeting-word word-3" aria-hidden="true">Hallo.</span><h1 class="greeting-word word-4">Oi.</h1></div><p class="hero-copy">Sou Karla. Mãe, sapatão, nordestina, professora, escaladora, redatora e diretora de criação na VML Praga.<span class="intro-lastline">Não necessariamente nessa ordem.</span></p><div class="hero-choices"><a href="#sobre">Saiba mais <span aria-hidden="true">↗</span></a><a href="#work">Ver trabalhos <span aria-hidden="true">↓</span></a></div><div class="hero-foot"><span>KARLA CALHEIROS · PORTFÓLIO</span><span>2026</span></div></header>
