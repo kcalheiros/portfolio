@@ -86,6 +86,24 @@
 /* Larger selected-work headline with safe responsive scaling */
 .work h2{font-size:clamp(52px,9.4vw,145px);line-height:.98;letter-spacing:-.06em;max-width:100%;overflow-wrap:normal}
 @media(max-width:700px){.work h2{font-size:clamp(39px,9vw,69px);line-height:1.03;letter-spacing:-.052em;text-wrap:balance}}
+
+/* One display type scale for the three large statements */
+:root{--display-size:clamp(86px,14vw,190px)}
+.greeting-word,.work h2,.more-work a{
+ font-family:Arial,Helvetica,sans-serif!important;
+ font-size:var(--display-size)!important;
+ font-weight:900!important;
+ line-height:1!important;
+ letter-spacing:-.075em!important;
+}
+.work h2{max-width:100%;overflow-wrap:normal;text-wrap:balance;margin-top:75px}
+.more-work a{display:block;max-width:100%;text-wrap:balance;overflow-wrap:normal}
+.more-work a span{font-size:.5em;vertical-align:middle;letter-spacing:0}
+@media(max-width:700px){
+ :root{--display-size:clamp(78px,22vw,120px)}
+ .work h2{margin-top:48px}
+ .more-work a{line-height:1.04!important}
+}
 </style></head><body>
 <nav class="top"><a href="#top">KARLA CALHEIROS</a><div><a href="#sobre">SOBRE</a><a href="#work">WORK</a><a href="#contato">CONTATO</a></div></nav>
 <header class="hero hero-intro" id="top"><div class="greeting" aria-label="Hello. Ahoj. Hallo. Oi."><span class="greeting-word word-1" aria-hidden="true">Hello.</span><span class="greeting-word word-2" aria-hidden="true">Ahoj.</span><span class="greeting-word word-3" aria-hidden="true">Hallo.</span><h1 class="greeting-word word-4">Oi.</h1></div><p class="hero-copy">Sou Karla. Mãe, sapatão, nordestina, professora, bicicleteira, redatora e diretora de criação na VML Praga.<span class="intro-lastline">Não necessariamente nessa ordem.</span></p><div class="hero-choices"><a href="#sobre">Saiba mais <span aria-hidden="true">↗</span></a><a href="#work">Ver trabalhos <span aria-hidden="true">↓</span></a></div><div class="hero-foot"><span>KARLA CALHEIROS · PORTFÓLIO</span><span>2026</span></div></header>
